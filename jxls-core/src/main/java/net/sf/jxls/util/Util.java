@@ -17,8 +17,6 @@ import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.regex.Pattern;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFSheetConditionalFormatting;
 
 /**
  * This class contains many utility methods used by jXLS framework
@@ -604,8 +602,8 @@ public final class Util {
         switch (oldCell.getCellType()) {
             case org.apache.poi.ss.usermodel.Cell.CELL_TYPE_STRING:
                 String oldValue = oldCell.getRichStringCellValue().getString();
-                newCell.setCellValue(newCell.getSheet().getWorkbook().getCreationHelper().createRichTextString(oldValue.replaceAll(
-                        expressionToReplace, expressionReplacement)));
+                String newValue = replaceExpressions(oldValue, expressionToReplace, expressionReplacement);
+                newCell.setCellValue(newCell.getSheet().getWorkbook().getCreationHelper().createRichTextString(newValue));
                 break;
             case org.apache.poi.ss.usermodel.Cell.CELL_TYPE_NUMERIC:
                 newCell.setCellValue(oldCell.getNumericCellValue());
@@ -625,6 +623,19 @@ public final class Util {
             default:
                 break;
         }
+    }
+
+    static String replaceExpressions(String originalExpression,
+            String expressionToReplace, String expressionReplacement) {
+        /* assuming that:
+           - originalExpression may contain expressions of the form ${expr}
+           - expressionToReplace is an identifier (alphanumeric + underscore)
+           - expressionReplacement is an identifier too
+           - only root value may be replaced
+        */
+        return originalExpression.replaceAll(
+                "(\\$\\{)" + expressionToReplace + "((\\b.*)?\\})",
+                "$1" + expressionReplacement + "$2");
     }
 
     public static void copyConditionalFormat(org.apache.poi.ss.usermodel.Cell oldCell, org.apache.poi.ss.usermodel.Cell newCell) {
