@@ -952,7 +952,7 @@ public final class Util {
         for (int j = resultWorkbook.getSheetAt(sheetNum).getFirstRowNum(), c = resultWorkbook.getSheetAt(sheetNum).getLastRowNum(); j <= c; j++) {
             org.apache.poi.ss.usermodel.Row row = resultWorkbook.getSheetAt(sheetNum).getRow(j);
             if (row != null) {
-                maxColumnNum = row.getLastCellNum();
+                maxColumnNum = Math.max(maxColumnNum, row.getLastCellNum());
             }
         }
         resultWorkbook.setPrintArea(sheetNum, 0, maxColumnNum, 0,
