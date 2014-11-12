@@ -17,7 +17,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
  * @author Leonid Vysochyn
  */
 public class XLSXReaderTest extends TestCase {
-    public static final String dataXLS = "/templates/departmentdata.xlsx";
+    public static final String dataXLS = "/templates/departmentData.xlsx";
 
     public void testRead() throws IOException, InvalidFormatException {
         InputStream inputXLS = new BufferedInputStream(getClass().getResourceAsStream(dataXLS));

@@ -103,7 +103,7 @@ public class XLSTransformerTest extends TestCase {
     public static final String multiTabXLS = "/templates/multi-tab-template.xls";
     public static final String multiTabDestXLS = "target/multi-tab_output.xls";
 
-    public static final String groupTagXLS = "/templates/groupTag.xls";
+    public static final String groupTagXLS = "/templates/grouptag.xls";
     public static final String groupTagDestXLS = "target/groupTag_output.xls";
 
     public static final String jexlXLS = "/templates/jexl.xls";
