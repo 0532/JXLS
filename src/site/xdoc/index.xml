@@ -11,9 +11,9 @@
             <p>This is a minor bug fix release
             The following bugs were fixed</p>
             <ul>
-                <li>#10 Tests fail in Linux (https://sourceforge.net/p/jxls/patches/10/)</li>
-                <li>#11 When a multi-tab XLS is created, root object name in the expressions is replaced too widely (https://sourceforge.net/p/jxls/patches/11/)</li>
-                <li>#12 Print area is computed incorrectly when transforming to multiple sheets (http://sourceforge.net/p/jxls/patches/12)</li>
+                <li><a href="https://sourceforge.net/p/jxls/patches/10/">#10 Tests fail in Linux</a></li>
+                <li><a href="https://sourceforge.net/p/jxls/patches/11/">#11 When a multi-tab XLS is created, root object name in the expressions is replaced too widely</a></li>
+                <li><a href="http://sourceforge.net/p/jxls/patches/12">#12 Print area is computed incorrectly when transforming to multiple sheets </a></li>
             </ul>
             <hr/>
         </section>
