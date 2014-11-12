@@ -6,11 +6,14 @@
     <body>
         <section name="News">
             <p>
-                <strong>jXLS v1.0.5 is released</strong>
+                <strong>jXLS v1.0.6 is released</strong>
             </p>
-            <p>Main changes in v1.0.5</p>
+            <p>This is a minor bug fix release
+            The following bugs were fixed</p>
             <ul>
-                <li>Fixed a bug with default formula value (applied <a href="https://sourceforge.net/p/jxls/bugs/59/">patch</a>)</li>
+                <li>#10 Tests fail in Linux (https://sourceforge.net/p/jxls/patches/10/)</li>
+                <li>#11 When a multi-tab XLS is created, root object name in the expressions is replaced too widely (https://sourceforge.net/p/jxls/patches/11/)</li>
+                <li>#12 Print area is computed incorrectly when transforming to multiple sheets (http://sourceforge.net/p/jxls/patches/12)</li>
             </ul>
             <hr/>
         </section>
