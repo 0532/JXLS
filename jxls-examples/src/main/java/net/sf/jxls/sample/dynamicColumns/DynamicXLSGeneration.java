@@ -85,7 +85,7 @@ public class DynamicXLSGeneration {
 
 		ArrayList<Columns> cols = new ArrayList<Columns>();	
 		for (int j = 0; j < 10; j++) {
-			cols.add(new Columns("001"+j,"18"+j+"€"));
+			cols.add(new Columns("001"+j,"18"+j+"yuan"));
 		}
 	
 		Map map = new HashMap();
