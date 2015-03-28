@@ -1,6 +1,5 @@
 #####jXLS - Export data to Excel using XLS template
-================
-
+------------
 To use jXLS engine you have to put  jxls-core   jar in your classpath.
 
 And if you are planning to use jXLS to read XLS files you have to add jxls-reader jar file to your classpath.
@@ -17,7 +16,7 @@ The following Jakarta libraries are also required to be on your classpath.
     * Commons Digester
 
 ######Dependencies
-------------
+=========
 jXLS requires next libraries to be on your classpath
 
 Jakarta POI - great library to manipulate XLS files from pure Java
