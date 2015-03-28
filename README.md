@@ -16,7 +16,8 @@ The following Jakarta libraries are also required to be on your classpath.
     * Commons Digester
 
 ######Dependencies
-=========
+
+
 jXLS requires next libraries to be on your classpath
 
 Jakarta POI - great library to manipulate XLS files from pure Java
