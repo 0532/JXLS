@@ -1,12 +1,5 @@
-jXLS - Export data to Excel using XLS template
+#####jXLS - Export data to Excel using XLS template
 ===============================================
-Online docs - http://jxls.sourceforge.net/
-
-Installation
--------------
-You can download the latest jXLS release from here:
-
-    http://sourceforge.net/project/showfiles.php?group_id=141729
 
 To use jXLS engine you have to put  jxls-core   jar in your classpath.
 
@@ -23,7 +16,7 @@ The following Jakarta libraries are also required to be on your classpath.
     * Commons Logging
     * Commons Digester
 
-Dependencies
+######Dependencies
 ------------
 jXLS requires next libraries to be on your classpath
 
@@ -50,16 +43,5 @@ Jakarta Commons Digester - excellent library to create objects from XML
 Jakarta Commons Logging - good logging library
 
     http://jakarta.apache.org/commons/logging/
-
-Building from source
---------------------
-Download jXLS distribution from
-        http://sourceforge.net/project/showfiles.php?group_id=141729
-
-Download and install Maven 2 framework
-        http://maven.apache.org/
-
-Execute from source code folder
-        mvn clean install 
 
 
