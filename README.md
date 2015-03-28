@@ -1,5 +1,5 @@
 #####jXLS - Export data to Excel using XLS template
-===============================================
+================
 
 To use jXLS engine you have to put  jxls-core   jar in your classpath.
 
@@ -22,7 +22,7 @@ jXLS requires next libraries to be on your classpath
 
 Jakarta POI - great library to manipulate XLS files from pure Java
 
-    http://jakarta.apache.org/poi/ 
+   http://jakarta.apache.org/poi/ 
 
 Jakarta Commons BeanUtils - great library for dynamic defining and accessing bean properties.
 
@@ -38,10 +38,10 @@ Jakarta Commons JEXL - excellent library for Expression Language support.
 
 Jakarta Commons Digester - excellent library to create objects from XML
 
-    http://jakarta.apache.org/commons/digester/
+   http://jakarta.apache.org/commons/digester/
 
 Jakarta Commons Logging - good logging library
 
-    http://jakarta.apache.org/commons/logging/
+   http://jakarta.apache.org/commons/logging/
 
 
